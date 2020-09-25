@@ -12,7 +12,7 @@ public class SqlQuery {
             "user(firstname, lastname, username, email, mobile, password, user_status, status) " +
             "values(?, ?, ?, ?, ?, ?, ?, 1";
 
-    public static final String ADD_USER_ROLE = "";
+    public static final String ADD_USER_ROLE = "insert into user_role(user_id, role_id) values(?, ?)";
 
     private Long id;
     private String firstName;
